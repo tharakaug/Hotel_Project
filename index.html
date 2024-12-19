@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CHARLIES lUXURY PALACE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+
+      <nav class="navbar navbar-expand-lg z-index-1 fixed-top  ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#header">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rooms">rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">gallery</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#customers">dining</a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div class="head-top">
+        <div class="site-name">
+          <span>City Of Dreams</span>
+        </div>
+        <div class="site-nav">
+          <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+        </div>
+      </div> -->
+
+      <div class="head-bottom flex">
+        <h2>Welcome Cinnamon Life City of Dreams Sri Lanka</h2>
+        <p>
+          Our rooms and suites enjoy incredible views of the Indian Ocean and Colombo, designed to capture natural light, showcasing the vibrant colours from dawn to dusk.
+        </p>
+        <!-- <button type="button" class="head-btn">Get Started</button> -->
+      </div>
+      <div class="book">
+        <form class="book-form">
+          <div class="form-item">
+            <label for="checkin-date">Check In Date: </label>
+            <input type="date" id="chekin-date" />
+          </div>
+          <div class="form-item">
+            <label for="checkout-date">Check Out Date: </label>
+            <input type="date" id="chekout-date" />
+          </div>
+          <div class="form-item">
+            <label for="adult">Adults: </label>
+            <input type="number" min="1" value="1" id="adult" />
+          </div>
+          <div class="form-item">
+            <label for="children">Children: </label>
+            <input type="number" min="1" value="1" id="children" />
+          </div>
+          <div class="form-item">
+            <label for="rooms">Rooms: </label>
+            <input type="number" min="1" value="1" id="rooms" />
+          </div>
+          <div class="form-item">
+            <input type="submit" class="btn" value="Book Now" />
+          </div>
+        </form>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+
+    <!-- <div class="sidenav" id="sidenav">
+      <span class="cancel-btn" id="cancel-btn">
+        <i class="fas fa-times"></i>
+      </span>
+
+      <ul class="navbar">
+        <li><a href="#header">home</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#rooms">rooms</a></li>
+        <li><a href="#gallery">gallery</a></li>
+        <li><a href="#customers">dining</a></li>
+      </ul>
+      <button class="btn sign-up">sign up</button>
+      <button class="btn log-in">log in</button>
+    </div> -->
+
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+    <!-- <section class="services sec-width" id="services">
+      <div class="title">
+        <h2>services</h2>
+      </div>
+      <div class="services-container">
+        
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-utensils"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Food Service/ Food Runner</h2>
+            <p>
+              Distributes and serves meals, beverages, and snacks. Prepares
+              dining areas for the serving of meals and sets up serving lines.
+              Cleans dining, service, and food preparation areas. Cleans and
+              sterilizes dishes, kitchen utensils, and equipment.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-swimming-pool"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Refreshment</h2>
+            <p>
+              A refreshing bath or drink makes you feel energetic or cool again
+              after you have been tired or hot. Herbs have been used for
+              centuries to make refreshing drinks. Synonyms: stimulating, fresh,
+              cooling, bracing More Synonyms of refreshing.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+       
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-broom"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Housekeeping</h2>
+            <p>
+              Cleaning is the process of removing unwanted substances, such as
+              dirt, infectious agents, and other impurities, from an object or
+              environment.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-door-closed"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Room Security</h2>
+            <p>
+              Room service or in-room dining is a hotel service enabling guests
+              to choose items of food and drink for delivery to their hotel room
+              for consumption. Room service is organized as a subdivision within
+              the food and beverage department of high-end hotel and resort
+              properties.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        
+      </div>
+    </section> -->
+
+    <!-- <div class="book">
+      <form class="book-form">
+        <div class="form-item">
+          <label for="checkin-date">Check In Date: </label>
+          <input type="date" id="chekin-date" />
+        </div>
+        <div class="form-item">
+          <label for="checkout-date">Check Out Date: </label>
+          <input type="date" id="chekout-date" />
+        </div>
+        <div class="form-item">
+          <label for="adult">Adults: </label>
+          <input type="number" min="1" value="1" id="adult" />
+        </div>
+        <div class="form-item">
+          <label for="children">Children: </label>
+          <input type="number" min="1" value="1" id="children" />
+        </div>
+        <div class="form-item">
+          <label for="rooms">Rooms: </label>
+          <input type="number" min="1" value="1" id="rooms" />
+        </div>
+        <div class="form-item">
+          <input type="submit" class="btn" value="Book Now" />
+        </div>
+      </form>
+    </div> -->
+
+    <section class="rooms sec-width" id="rooms">
+      <div class="title">
+        <h2>ROOMS & SUITES</h2>
+      </div>
+      <div class="rooms-container">
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img src="images/bb6e79855be91b32f118c100711e1083.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Oceanfront View</h3>
+            <!-- <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+            </ul> -->
+            <p>
+              Sleek futuristic furnishings provide ultimate comfort, complemented by high tech amenities. Floor to ceiling windows open up to breathtaking ocean vistas, inviting the tranquil beauty of the sea into your space. Let the soothing sounds of the waves and the expansive ocean horizon create a peaceful and rejuvenating atmosphere throughout your stay.
+            </p>
+            
+            <p class="rate"><span>$300.00 /</span> Per Night</p>
+            <button  type="button" class="btn"style="background-color: white; color: black;">book now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img src="images/aff5f1d71e4bf87ec26f5efc1d9dc3b2.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Cityscape View</h3>
+            <!-- <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+            </ul> -->
+            <p>
+              Sleek futuristic furnishings envelop you in softness, while high tech amenities ensure your comfort. Floor to ceiling windows frame stunning views of the vibrant city skyline, bringing the dynamic energy of the metropolis into your room. Whether day or night, the ever changing cityscape offers a captivating backdrop to your stay.
+            </p>
+            
+            <p class="rate"><span>$200.00 /</span> Per Night</p>
+            <button type="button" class="btn" style="background-color: white; color: black;">book now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img src="images/9592407aeaced83d61f54bf177658287.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Oceanscape Suite</h3>
+            <!-- <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+            </ul> -->
+            <p>
+              These suites feature sleek, futuristic furnishings and high tech amenities, ensuring unparalleled comfort. Floor to ceiling windows reveal breathtaking ocean vistas, inviting the serene beauty of the sea into your lavishly spacious haven. Experience the perfect blend of sophistication and tranquility, where the soothing sounds of the waves and the endless horizon create a rejuvenating retreat.
+            </p>
+            
+            <p class="rate"><span>$180.00 /</span> Per Night</p>
+            <button type="button" class="btn" style="background-color: white; color: black;">book now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="title">
+        <h2>GALLERY</h2>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/home2 img.jpg" class="d-block  w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/9592407aeaced83d61f54bf177658287.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/bb6e79855be91b32f118c100711e1083.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/aff5f1d71e4bf87ec26f5efc1d9dc3b2.jpg" class="d-block w-100" alt="...">
+          </div>
+         >
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+
+    <section class="customers" id="customers">
+      <div class="sec-width">
+        <div class="title">
+          <h2>DINING</h2>
+        </div>
+        <div class="customers-container">
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>YOROKO</h3>
+            <p>
+            </p>
+            <img src="images/yoroko.jpg" alt="customer image" />
+            <!-- <span>Jacklien Fernando, India</span> -->
+          </div>
+          <!-- end of single customer -->
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>INDIYA</h3>
+            <p>
+            </p>
+            <img src="images/india.jpg" alt="customer image" />
+            <!-- <span>Alex Hales, England</span> -->
+          </div>
+          <!-- end of single customer -->
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>DREAMS & BEATS</h3>
+            <p>
+            </p>
+            <img src="images/beats.jpg" alt="customer image" />
+            <!-- <span>Kajal Aghrawal, India</span> -->
+          </div>
+          <!-- end of single customer -->
+        </div>
+      </div>
+    </section>
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <h2>About Us</h2>
+          <p>
+            Our approach to wellness is rooted in the essence of authentic Sri Lankan hospitality, where every interaction is infused with warmth and sincerity. We pride ourselves on understanding that each of our guests is unique, with individual stories and needs that deserve personalised attention and care. 
+          </p>
+          <ul class="social-icons">
+            <li class="flex">
+              <i class="fa fa-twitter fa-2x"></i>
+            </li>
+            <li class="flex">
+              <i class="fa fa-facebook fa-2x"></i>
+            </li>
+            <li class="flex">
+              <i class="fa fa-instagram fa-2x"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Useful Links</h2>
+          <a href="#">Blog</a>
+          <a href="#">Rooms</a>
+          <a href="#">Subscription</a>
+          <a href="#">Gift Card</a>
+        </div>
+
+        <div>
+          <h2>Privacy</h2>
+          <a href="#">Career</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Services</a>
+        </div>
+
+        <div>
+          <h2>Get In Touch</h2>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <span> Cinnamon life Hotel,Colombo 7, Sri Lanka </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span> +94 112 161 161 </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span>info@cinnamonhotels.com </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
