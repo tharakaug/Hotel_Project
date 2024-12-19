@@ -114,10 +114,6 @@ img {
 .head-btn:hover {
   background: transparent;
 }
-.container-fluid{
-
-
-}
 .collapse{
   background: linear-gradient(rgba(200, 49, 255, 0.95), rgba(158, 0, 221, 0.95));
   font-size: 20px;
@@ -213,8 +209,7 @@ a{
 }
 
 .sec-width {
-  width: 70vw;
-  margin: 0 auto !important;
+  width: 90%;
 }
 
 /* service */
@@ -339,16 +334,15 @@ a{
 /* room */
 
 .rooms {
-  margin: 40px 0;
+margin-left: 10vw;
 }
 .room {
-  /* margin: 4px 0;
-  padding-bottom: 25px; */
   background: var(--dark);
   color: #fff;
 }
 article.room{
-  margin-bottom: 50px;
+  margin-bottom: 5vh;  
+  margin-right: 10vw;
 }
 .room-text {
   padding: 20px 60px;
@@ -424,34 +418,37 @@ article.room{
   img{
     height: 70vh;
   }
+
 }
 
 /* dining */
 
 .customers {
-  margin-top: 40px;
-  padding: 40px 0;
-  background: linear-gradient(rgba(216, 216, 216, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/dining2.jpg") center/cover no-repeat fixed;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
 }
-.customer {
+.card{
+  margin-bottom: 5vh;
+  background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  
+}
+/* .customer {
   background: #ffffff;
-  padding: 35px;
+  padding: 5px;
   text-align: center;
   margin: 10px 0;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   transition: var(--transition);
   border-radius: 5%;
-}
-.rating {
-  margin: 10px 0;
-  color: var(--green);
-}
-.customer h3 {
+} */
+.card h5 {
   font-size: 25px;
 }
-.customer p {
+/* .customer p {
   font-weight: bold;
   color: #66008f;
   opacity: 0.7;
@@ -459,19 +456,22 @@ article.room{
   width: 60%;
   margin: 5px auto;
   text-align: center;
+} */
+.card img {
+  width: 450px;
+  height: 500px;
+  border-radius: 0%;
+  object-fit: cover;
+  object-position: top;
+
 }
-.customer img {
-  width: 380px;
-  height: 450px;
-  margin-left: 30px ;
-}
-.customer span {
+/* .customer span {
   font-weight: 700;
   opacity: 0.7;
 }
 .customer:hover {
   transform: translateY(-18px);
-}
+} */
 @media (min-width: 992px) {
   .customers-container {
     display: grid;
